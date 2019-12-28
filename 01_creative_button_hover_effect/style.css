@@ -59,5 +59,62 @@ button span:nth-child(1) {
   height: 3px;
   background: -webkit-gradient(linear, left top, right top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
   background: linear-gradient(90deg, #2f0000, #07e8ff, #2f0000);
+  -webkit-animation: animateTop 2s linear infinite;
+          animation: animateTop 2s linear infinite;
+}
+
+button span:nth-child(2) {
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
+  background: linear-gradient(0deg, #2f0000, #07e8ff, #2f0000);
+  -webkit-animation: animateRight 2s linear infinite;
+          animation: animateRight 2s linear infinite;
+}
+
+@-webkit-keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@keyframes animateTop {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes animateRight {
+  0% {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  100% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -63,6 +63,39 @@ button {
         $accent-color,
         $base-color
       );
+      animation: animateTop 2s linear infinite;
     }
+
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+      width: $border-size;
+      height: 100%;
+      background: linear-gradient(
+        0deg,
+        $base-color,
+        $accent-color,
+        $base-color
+      );
+      animation: animateRight 2s linear infinite;
+    }
+  }
+}
+
+@keyframes animateTop {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animateRight {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
   }
 }
