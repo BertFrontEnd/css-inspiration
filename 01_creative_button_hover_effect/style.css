@@ -58,10 +58,12 @@ button span:nth-child(1) {
   left: 0;
   width: 100%;
   height: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
-  background: linear-gradient(90deg, #2f0000, #07e8ff, #2f0000);
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#07e8ff));
+  background: linear-gradient(90deg, transparent, #07e8ff);
   -webkit-animation: animateTop 2s linear infinite paused;
           animation: animateTop 2s linear infinite paused;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 button span:nth-child(2) {
@@ -69,10 +71,12 @@ button span:nth-child(2) {
   right: 0;
   width: 3px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
-  background: linear-gradient(0deg, #2f0000, #07e8ff, #2f0000);
+  background: -webkit-gradient(linear, left bottom, left top, from(#07e8ff), to(transparent));
+  background: linear-gradient(0deg, #07e8ff, transparent);
   -webkit-animation: animateRight 2s linear infinite paused;
           animation: animateRight 2s linear infinite paused;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 button span:nth-child(3) {
@@ -80,10 +84,12 @@ button span:nth-child(3) {
   left: 0;
   width: 100%;
   height: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
-  background: linear-gradient(90deg, #2f0000, #07e8ff, #2f0000);
+  background: -webkit-gradient(linear, left top, right top, from(#07e8ff), to(transparent));
+  background: linear-gradient(90deg, #07e8ff, transparent);
   -webkit-animation: animateBottom 2s linear infinite paused;
           animation: animateBottom 2s linear infinite paused;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
 }
 
 button span:nth-child(4) {
@@ -91,10 +97,12 @@ button span:nth-child(4) {
   left: 0;
   width: 3px;
   height: 100%;
-  background: -webkit-gradient(linear, left bottom, left top, from(#2f0000), color-stop(#07e8ff), to(#2f0000));
-  background: linear-gradient(0deg, #2f0000, #07e8ff, #2f0000);
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#07e8ff));
+  background: linear-gradient(0deg, transparent, #07e8ff);
   -webkit-animation: animateLeft 2s linear infinite paused;
           animation: animateLeft 2s linear infinite paused;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
 }
 
 button:hover span {

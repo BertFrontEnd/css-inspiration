@@ -58,13 +58,9 @@ button {
       left: 0;
       width: 100%;
       height: $border-size;
-      background: linear-gradient(
-        90deg,
-        $base-color,
-        $accent-color,
-        $base-color
-      );
+      background: linear-gradient(90deg, transparent, $accent-color);
       animation: animateTop 2s linear infinite paused;
+      animation-delay: 1s;
     }
 
     &:nth-child(2) {
@@ -72,13 +68,9 @@ button {
       right: 0;
       width: $border-size;
       height: 100%;
-      background: linear-gradient(
-        0deg,
-        $base-color,
-        $accent-color,
-        $base-color
-      );
+      background: linear-gradient(0deg, $accent-color, transparent);
       animation: animateRight 2s linear infinite paused;
+      animation-delay: 0s;
     }
 
     &:nth-child(3) {
@@ -86,13 +78,9 @@ button {
       left: 0;
       width: 100%;
       height: $border-size;
-      background: linear-gradient(
-        90deg,
-        $base-color,
-        $accent-color,
-        $base-color
-      );
+      background: linear-gradient(90deg, $accent-color, transparent);
       animation: animateBottom 2s linear infinite paused;
+      animation-delay: 1s;
     }
 
     &:nth-child(4) {
@@ -100,13 +88,9 @@ button {
       left: 0;
       width: $border-size;
       height: 100%;
-      background: linear-gradient(
-        0deg,
-        $base-color,
-        $accent-color,
-        $base-color
-      );
+      background: linear-gradient(0deg, transparent, $accent-color);
       animation: animateLeft 2s linear infinite paused;
+      animation-delay: 0s;
     }
   }
 
