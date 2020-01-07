@@ -1,0 +1,50 @@
+$primary-color: #212121;
+$secondary-color: #00ffff;
+$main-size: 18px;
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #333333, #4c4a4a);
+}
+
+h1 {
+  position: relative;
+  color: $primary-color;
+  font-size: 150px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-bottom: $main-size solid $primary-color;
+  cursor: pointer;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: 'Loading...';
+    color: $secondary-color;
+    border-bottom: $main-size solid $secondary-color;
+    overflow: hidden;
+    animation: loading 8s infinite linear paused;
+  }
+
+  &:hover {
+    &:before {
+      animation-play-state: running;
+    }
+  }
+}
+
+@keyframes loading {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
