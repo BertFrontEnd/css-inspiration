@@ -40,7 +40,35 @@ body {
           animation: animate-2 linear 0.5s infinite;
 }
 
-.pacman div:nth-child(1), .pacman div:nth-child(2), .pacman div:nth-child(3) {
+.pacman div.eye {
+  position: absolute;
+  width: 15px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000;
+  top: 15%;
+  right: 35%;
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  z-index: 99;
+}
+
+.pacman div.eye:after {
+  content: '';
+  /*  display: block; */
+  position: absolute;
+  width: 5px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: translate(75%, -50%);
+          transform: translate(75%, -50%);
+  z-index: 999;
+}
+
+.pacman div.dot:nth-child(1), .pacman div.dot:nth-child(2), .pacman div.dot:nth-child(3) {
   background-color: #ffd000;
   border-radius: 50%;
   width: 25px;
@@ -53,17 +81,17 @@ body {
   opacity: 0;
 }
 
-.pacman div:nth-child(1) {
+.pacman div.dot:nth-child(1) {
   -webkit-animation: ball 1s 1s infinite linear;
           animation: ball 1s 1s infinite linear;
 }
 
-.pacman div:nth-child(2) {
+.pacman div.dot:nth-child(2) {
   -webkit-animation: ball 1s 0.5s infinite linear;
           animation: ball 1s 0.5s infinite linear;
 }
 
-.pacman div:nth-child(3) {
+.pacman div.dot:nth-child(3) {
   -webkit-animation: ball 1s 0s infinite linear;
           animation: ball 1s 0s infinite linear;
 }
