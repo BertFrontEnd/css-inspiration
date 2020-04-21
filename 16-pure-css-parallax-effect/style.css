@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  font-family: sans-serif;
+  text-align: justify;
+}
+
+html body header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 50px;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  -webkit-transform-style: inherit;
+          transform-style: inherit;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Sedgwick Ave', cursive;
+  color: #ffffff;
+  text-align: center;
+}
+
+html body header:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100vh;
+  background-image: url("./assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  -webkit-transform: translateZ(-1px) scale(2);
+          transform: translateZ(-1px) scale(2);
+  z-index: -1;
+}
+
+html body header h1 {
+  font-size: 90px;
+  letter-spacing: 5px;
+  text-shadow: 5px 5px 10px #000000;
+  margin-top: 0;
+}
+
+html body header p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  max-width: 60%;
+}
+
+html body .content {
+  padding: 50px;
+  background-color: #f1f1f1;
+  margin: 0;
+  font-size: 20px;
+  line-height: 50px;
+  color: #2c3e50;
+}
+/*# sourceMappingURL=style.css.map */
