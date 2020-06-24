@@ -1,0 +1,163 @@
+body .wrapper figure figcaption, body .wrapper figure figcaption a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(45deg, #00a8c5, #ffff7e);
+}
+
+body .wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper figure {
+  position: relative;
+  overflow: hidden;
+  min-width: 320px;
+  max-width: 480px;
+  max-height: 360px;
+  background-color: #00e8ff;
+  -webkit-box-shadow: -1px 1px 15px -5px #010101;
+          box-shadow: -1px 1px 15px -5px #010101;
+  text-align: center;
+}
+
+body .wrapper figure:hover img {
+  opacity: 0.7;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+body .wrapper figure:hover figcaption:after, body .wrapper figure:hover figcaption:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body .wrapper figure:hover figcaption:after {
+  -webkit-transition-delay: 0, 15s;
+          transition-delay: 0, 15s;
+}
+
+body .wrapper figure:hover figcaption h2,
+body .wrapper figure:hover figcaption p {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+body .wrapper figure:hover figcaption h2,
+body .wrapper figure:hover figcaption p,
+body .wrapper figure:hover figcaption img {
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
+}
+
+body .wrapper figure img {
+  height: 390px;
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, -30px, 0);
+          transform: translate3d(0, -30px, 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+body .wrapper figure figcaption {
+  padding: 60px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #010101;
+}
+
+body .wrapper figure figcaption:after, body .wrapper figure figcaption:before {
+  position: absolute;
+  pointer-events: none;
+  content: '';
+  opacity: 0;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
+}
+
+body .wrapper figure figcaption::after {
+  top: 30px;
+  right: 50px;
+  bottom: 30px;
+  left: 50px;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transform-origin: 100% 0;
+          transform-origin: 100% 0;
+}
+
+body .wrapper figure figcaption::before {
+  top: 50px;
+  right: 30px;
+  bottom: 50px;
+  left: 30px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+}
+
+body .wrapper figure figcaption h2 {
+  text-align: right;
+  text-transform: uppercase;
+  padding-top: 25%;
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  transition: transform 0.35s, -webkit-transform 0.35s;
+  -webkit-transform: translate3d(0, -30px, 0);
+          transform: translate3d(0, -30px, 0);
+}
+
+body .wrapper figure figcaption p {
+  font-size: 14px;
+  font-weight: 300;
+  opacity: 0;
+  -webkit-transform: translate3d(0, 10px 0);
+          transform: translate3d(0, 10px 0);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.4s;
+  transition: opacity 0.5s, -webkit-transform 0.4s;
+  transition: opacity 0.5s, transform 0.4s;
+  transition: opacity 0.5s, transform 0.4s, -webkit-transform 0.4s;
+}
+
+body .wrapper figure figcaption a {
+  z-index: 1000;
+  font-size: 0;
+  opacity: 0;
+}
+/*# sourceMappingURL=style.css.map */
