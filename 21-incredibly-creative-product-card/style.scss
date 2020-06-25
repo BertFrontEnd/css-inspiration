@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #333333, #5a5454);
+
+  .wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+
+    .card {
+      position: relative;
+      width: 190px;
+      height: 240px;
+      border-radius: 20px;
+      background: linear-gradient(240deg, #808080, #e6e6e6);
+      font-family: 'Montserrat', sans-serif;
+      text-transform: uppercase;
+      transform: scale(1);
+      transition: 0.1s linear;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        .price {
+          background: linear-gradient(45deg, #b066fe, #63e2ff);
+        }
+      }
+
+      &:nth-child(2) {
+        .price {
+          background: linear-gradient(45deg, #ed1c24, #fcee21);
+        }
+      }
+
+      &:nth-child(3) {
+        .price {
+          background: linear-gradient(45deg, #00ffa1, #00ffff);
+        }
+      }
+
+      .picture {
+        text-align: center;
+
+        img {
+          position: relative;
+          width: 100px;
+          top: -60px;
+          z-index: 1;
+          transform: scale(1);
+          transition: 0.15s linear;
+        }
+      }
+
+      .price {
+        position: absolute;
+        right: 0px;
+        bottom: 100px;
+        width: 120px;
+        height: 200px;
+        border-radius: 20px 20px 0 2px;
+        transform: skewY(40deg);
+
+        span {
+          position: absolute;
+          top: 130px;
+          left: 40px;
+          font-size: 28px;
+          font-weight: 900;
+          color: #ffffff;
+          transform: skewY(-40deg);
+        }
+      }
+
+      .info {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+
+        .icon {
+          position: absolute;
+          font-size: 12px;
+          color: #606060;
+          text-align: left;
+          letter-spacing: 1px;
+
+          img {
+            width: 30px;
+            margin-bottom: 5px;
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .name {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        max-width: 80px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #606060;
+      }
+
+      &:hover {
+        transform: scale(1.1);
+        transition: 0.1s linear;
+
+        .picture > img {
+          transform: scale(1.1);
+          transition: 0.15s linear;
+        }
+      }
+    }
+  }
+}
