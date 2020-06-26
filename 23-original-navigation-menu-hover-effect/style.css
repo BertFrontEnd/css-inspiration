@@ -1,0 +1,88 @@
+body nav ul li a::before, body nav ul li::before, body nav ul li::after {
+  position: absolute;
+  height: 33.33%;
+  width: 0%;
+  content: '';
+  background-color: #fb872b;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #93278f, #00a99d);
+}
+
+body nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body nav ul li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin: 0 5px;
+  padding: 4px 15px;
+}
+
+body nav ul li a {
+  z-index: 1;
+  padding: 10px 5px;
+  font-family: 'Tomorrow', sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  -webkit-transform: 0.4s ease;
+          transform: 0.4s ease;
+}
+
+body nav ul li a::before {
+  left: 0;
+  bottom: 66.66%;
+}
+
+body nav ul li::before {
+  right: 0;
+  bottom: 33.33%;
+}
+
+body nav ul li::after {
+  left: 0;
+  bottom: 0.01%;
+}
+
+body nav ul li:hover a {
+  text-shadow: 1px 1px 5px #000000;
+}
+
+body nav ul li:hover a:before {
+  width: 100%;
+}
+
+body nav ul li:hover::after, body nav ul li:hover::before {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
