@@ -1,0 +1,116 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(225deg, #ffff7e, #00a8c5);
+}
+
+body figure {
+  position: relative;
+  width: 450px;
+  height: 300px;
+  -webkit-box-shadow: 0 0 15px -5px #010101;
+          box-shadow: 0 0 15px -5px #010101;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body figure img {
+  height: 100%;
+  width: auto;
+}
+
+body figure figcaption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+}
+
+body figure figcaption h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  color: #3c3c3c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body figure figcaption ul {
+  position: absolute;
+  right: 15px;
+  bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body figure figcaption ul li {
+  margin: 0 15px;
+  -webkit-transform: translateY(80px);
+          transform: translateY(80px);
+}
+
+body figure figcaption ul li:nth-child(1) {
+  -webkit-transition: 0.4s 0.05s;
+  transition: 0.4s 0.05s;
+}
+
+body figure figcaption ul li:nth-child(2) {
+  -webkit-transition: 0.4s 0.1s;
+  transition: 0.4s 0.1s;
+}
+
+body figure figcaption ul li:nth-child(3) {
+  -webkit-transition: 0.4s 0.15s;
+  transition: 0.4s 0.15s;
+}
+
+body figure figcaption ul li svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body figure figcaption ul li svg:hover {
+  fill: #16d6c4;
+}
+
+body figure figcaption::before {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  content: '';
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%);
+          clip-path: polygon(0 100%, 100% 0, 100% 100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+body figure figcaption:hover h2,
+body figure figcaption:hover li {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+body figure figcaption:hover::before {
+  height: 150px;
+}
+/*# sourceMappingURL=style.css.map */
