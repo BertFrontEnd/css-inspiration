@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: linear-gradient(45deg, #fca5f1, #b5ffff);
+
+  input[type='radio'] {
+    appearance: none;
+
+    &:checked {
+      & + label {
+        background-color: #2e3192;
+        box-shadow: -2px 2px 20px -8px #010101;
+
+        color: #ffffff;
+
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+  }
+
+  label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 200px;
+    height: 150px;
+    margin: 50px;
+
+    border: 5px solid #7578e7;
+    border-radius: 20px;
+
+    color: #2e3192;
+
+    transition: 0.3s ease;
+
+    cursor: pointer;
+
+    i {
+      width: 64px;
+      height: 64px;
+      svg {
+        width: 64px;
+        height: 64px;
+        fill: #2e3192;
+      }
+    }
+
+    span {
+      margin-top: 10px;
+
+      font-family: 'Montserrat', sans-serif;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  }
+}

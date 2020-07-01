@@ -1,0 +1,76 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #fca5f1, #b5ffff);
+}
+
+body input[type='radio'] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body input[type='radio']:checked + label {
+  background-color: #2e3192;
+  -webkit-box-shadow: -2px 2px 20px -8px #010101;
+          box-shadow: -2px 2px 20px -8px #010101;
+  color: #ffffff;
+}
+
+body input[type='radio']:checked + label svg {
+  fill: #ffffff;
+}
+
+body label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 200px;
+  height: 150px;
+  margin: 50px;
+  border: 5px solid #7578e7;
+  border-radius: 20px;
+  color: #2e3192;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+body label i {
+  width: 64px;
+  height: 64px;
+}
+
+body label i svg {
+  width: 64px;
+  height: 64px;
+  fill: #2e3192;
+}
+
+body label span {
+  margin-top: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=style.css.map */
