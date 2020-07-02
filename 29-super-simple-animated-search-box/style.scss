@@ -1,0 +1,88 @@
+$size: 50px;
+$button-size: 40px;
+$icon-size: 20px;
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background: linear-gradient(45deg, #00b7ff, #ffffc7);
+
+  font-family: 'Montserrat', sans-serif;
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: $size;
+    padding: 5px;
+    border-radius: $size;
+
+    background: linear-gradient(45deg, #333333, #5a5454);
+
+    &:hover {
+      input {
+        width: 250px;
+        padding: 0 15px;
+      }
+
+      button {
+        background-color: #e6e6e6;
+      }
+    }
+
+    input {
+      width: 0;
+      padding: 0;
+      border: none;
+      outline: none;
+
+      background: none;
+
+      font-size: 18px;
+      color: #ffffff;
+      letter-spacing: 1px;
+
+      transition: 0.4s;
+
+      &::placeholder {
+        font-size: 16px;
+        letter-spacing: 1px;
+      }
+
+      &::-ms-clear {
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: $button-size;
+      height: $button-size;
+      border: none;
+      border-radius: 50%;
+      outline: none;
+
+      background-color: #333333;
+
+      transition: 0.4s;
+
+      cursor: pointer;
+
+      svg {
+        width: $icon-size;
+        height: $icon-size;
+
+        fill: #00b7ff;
+      }
+    }
+  }
+}

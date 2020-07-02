@@ -1,0 +1,105 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #00b7ff, #ffffc7);
+  font-family: 'Montserrat', sans-serif;
+}
+
+body .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  padding: 5px;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #333333, #5a5454);
+}
+
+body .search:hover input {
+  width: 250px;
+  padding: 0 15px;
+}
+
+body .search:hover button {
+  background-color: #e6e6e6;
+}
+
+body .search input {
+  width: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .search input::-webkit-input-placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+body .search input:-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+body .search input::-ms-input-placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+body .search input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+body .search input::-ms-clear {
+  color: #ffffff;
+  cursor: pointer;
+}
+
+body .search button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: #333333;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+body .search button svg {
+  width: 20px;
+  height: 20px;
+  fill: #00b7ff;
+}
+/*# sourceMappingURL=style.css.map */
