@@ -1,0 +1,63 @@
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100vh;
+  background: linear-gradient(225deg, #6441a5, #2a0845);
+  overflow: hidden;
+}
+
+body .wrapper {
+  position: relative;
+  min-width: 400px;
+  height: 300px;
+  margin: 40px;
+  border: 2px solid #000000;
+  -webkit-box-shadow: 0 0 15px -5px #010101;
+          box-shadow: 0 0 15px -5px #010101;
+  cursor: pointer;
+}
+
+body .wrapper img {
+  width: auto;
+  height: 100%;
+}
+
+body .wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+body .wrapper:nth-child(1)::before {
+  background-image: url(./assets/img/road-01.jpg);
+}
+
+body .wrapper:nth-child(2)::before {
+  background-image: url(./assets/img/road-02.jpg);
+}
+
+body .wrapper:hover:before {
+  width: 0;
+}
+/*# sourceMappingURL=style.css.map */
